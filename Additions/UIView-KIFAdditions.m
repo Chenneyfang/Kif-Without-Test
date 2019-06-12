@@ -273,8 +273,8 @@ NS_INLINE BOOL StringsMatchExceptLineBreaks(NSString *expected, NSString *actual
 
                     @autoreleasepool {
                         // Scroll to the cell and wait for the animation to complete. Using animations here may not be optimal.
-                        CGRect sectionRect = [tableView rectForRowAtIndexPath:indexPath];
-                        [tableView scrollRectToVisible:sectionRect animated:NO];
+//                        CGRect sectionRect = [tableView rectForRowAtIndexPath:indexPath];
+//                        [tableView scrollRectToVisible:sectionRect animated:NO];
 
                         UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
                         UIAccessibilityElement *element = [cell accessibilityElementMatchingBlock:matchBlock notHidden:NO];
